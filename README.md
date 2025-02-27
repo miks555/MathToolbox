@@ -62,3 +62,5 @@ It is an mathematical tool developed using Windows Forms. It features a modern, 
 - Complex Number Operations
 - Mathematical Tables
 
+## License:
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.
