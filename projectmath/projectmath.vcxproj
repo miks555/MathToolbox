@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{8F68FE11-491E-4EAB-98F4-3C2F7AE79BB1}</ProjectGuid>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>projectmath</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="advanced_operations.cpp" />
+    <ClCompile Include="advanced_operations_class.cpp" />
+    <ClCompile Include="combinatorics.cpp" />
+    <ClCompile Include="combinatorics_class.cpp" />
+    <ClCompile Include="complex.cpp" />
+    <ClCompile Include="complex_class.cpp" />
+    <ClCompile Include="errorclass.cpp" />
+    <ClCompile Include="fibonacci_sequence.cpp" />
+    <ClCompile Include="figures_and_solids.cpp" />
+    <ClCompile Include="figures_and_solids_class.cpp" />
+    <ClCompile Include="mathematical_tables.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="more_about_triangle.cpp" />
+    <ClCompile Include="more_about_triangle_class.cpp" />
+    <ClCompile Include="number_properties.cpp" />
+    <ClCompile Include="number_properties_class.cpp" />
+    <ClCompile Include="number_system_conversion.cpp" />
+    <ClCompile Include="number_system_conversion_class.cpp" />
+    <ClCompile Include="polynomial.cpp" />
+    <ClCompile Include="polynomial_class.cpp" />
+    <ClCompile Include="quadratic_function.cpp" />
+    <ClCompile Include="quadratic_function_class.cpp" />
+    <ClCompile Include="segments_points_lines.cpp" />
+    <ClCompile Include="segments_points_lines_class.cpp" />
+    <ClCompile Include="simple_operations.cpp" />
+    <ClCompile Include="simple_operations_class.cpp" />
+    <ClCompile Include="statistics.cpp" />
+    <ClCompile Include="statistics_class.cpp" />
+    <ClCompile Include="trigonometry.cpp" />
+    <ClCompile Include="trigonometry_class.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="advanced_operations.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="advanced_operations_class.h" />
+    <ClInclude Include="combinatorics.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="combinatorics_class.h" />
+    <ClInclude Include="complex.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="complex_class.h" />
+    <ClInclude Include="errorclass.h" />
+    <ClInclude Include="fibonacci_sequence.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="figures_and_solids.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="figures_and_solids_class.h" />
+    <ClInclude Include="mathematical_tables.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="more_about_triangle.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="more_about_triangle_class.h" />
+    <ClInclude Include="number_properties.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="number_properties_class.h" />
+    <ClInclude Include="number_system_conversion.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="number_system_conversion_class.h" />
+    <ClInclude Include="polynomial.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="polynomial_class.h" />
+    <ClInclude Include="quadratic_function.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="quadratic_function_class.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="segments_points_lines.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="segments_points_lines_class.h" />
+    <ClInclude Include="simple_operations.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="simple_operations_class.h" />
+    <ClInclude Include="statistics.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="statistics_class.h" />
+    <ClInclude Include="trigonometry.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="trigonometry_class.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="advanced_operations.resx">
+      <DependentUpon>advanced_operations.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="combinatorics.resx">
+      <DependentUpon>combinatorics.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="complex.resx">
+      <DependentUpon>complex.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fibonacci_sequence.resx">
+      <DependentUpon>fibonacci_sequence.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="figures_and_solids.resx">
+      <DependentUpon>figures_and_solids.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mathematical_tables.resx">
+      <DependentUpon>mathematical_tables.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="more_about_triangle.resx">
+      <DependentUpon>more_about_triangle.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="number_properties.resx">
+      <DependentUpon>number_properties.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="number_system_conversion.resx">
+      <DependentUpon>number_system_conversion.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="polynomial.resx">
+      <DependentUpon>polynomial.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="quadratic_function.resx">
+      <DependentUpon>quadratic_function.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="segments_points_lines.resx">
+      <DependentUpon>segments_points_lines.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="simple_operations.resx">
+      <DependentUpon>simple_operations.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statistics.resx">
+      <DependentUpon>statistics.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trigonometry.resx">
+      <DependentUpon>trigonometry.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="projectmath.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="ball.ico" />
+    <Image Include="simple.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

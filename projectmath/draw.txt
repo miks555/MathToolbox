@@ -1,0 +1,7 @@
+if (MessageBox::Show("lol", "tit", MessageBoxButtons::YesNo, MessageBoxIcon::Question) == System::Windows::Forms::DialogResult::Yes)
+private: System::Void menu_Paint(System::Object^ sender, System::Windows::Forms::PaintEventArgs^ e) {
+	//e->Graphics->DrawEllipse(Pens::Blue, 200, 300, 60, 60);
+	//e->Graphics->DrawRectangle(Pens::Blue, 210, 300, 1, 1);
+	//e->Graphics->FillRectangle(Brushes::Aqua, 3, 3, 10, 10);
+	}
+okno->Referesh();
